@@ -307,9 +307,8 @@ footer h5{
 
 /* Tablet/iPad */
 
-@media  screen and (max-width: 900px) and (min-width: 600px) {
+@media  screen and (max-width: 900px) and (min-width: 601px) {
 
-    @media  screen and (max-width: 600px) {
         header {
             width: 100%;
         }
@@ -375,7 +374,7 @@ footer h5{
         }
         
         .teaPic {
-            width: 90%;
+            width: 45%;
             margin: 10px;
         }
         
@@ -395,10 +394,6 @@ footer h5{
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        
-        .locations h2 {
-            color: seashell;
         }
         
         .locations .locationCard {
@@ -427,7 +422,7 @@ footer h5{
         
         footer #contact h2{
             font-size: 25px;
-            margin-top: 10px;
+            margin-top: 25px;
             margin-bottom: 50px;
         }
         
