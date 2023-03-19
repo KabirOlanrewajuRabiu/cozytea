@@ -23,20 +23,16 @@ header {
     opacity: 0.9;
 }
 
-nav {
-    width: 30%;
-}
-
-header nav ul {
+header .nav-menu {
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 }
 
-header nav ul li {
+header .nav-item {
     list-style: none;
 }
 
-header nav ul li a {
+header .nav-link {
     text-decoration: underline;
     font-size: 22px;
 }
@@ -125,7 +121,7 @@ header nav ul li a {
 
 .locations .locationCard {
     width: 25%;
-    margin: 15px 20px;
+    margin: 15px 30px;
     padding: 30px 5px;
     text-align: center;
 }
@@ -179,8 +175,52 @@ footer h5{
         width: 80px;
     }
 
-    nav ul li {
-        display: none;
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+    
+    .nav-menu {
+        background-color: black;
+        position: fixed;
+        right: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 10px auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
     }
 
     .hero {
@@ -316,9 +356,53 @@ footer h5{
         #logo img {
             width: 100px;
         }
+
+        .hamburger {
+            display: block;
+        }
     
-        nav ul li {
-            display: none;
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+        
+        .nav-menu {
+            background-color: black;
+            position: fixed;
+            right: -100%;
+            top: 40px;
+            gap: 0;
+            flex-direction: column;
+            width: 40%;
+            height: 100vh;
+            text-align: center;
+            justify-content: flex-start;
+            transition: 0.5s;
+        }
+    
+        .nav-item {
+            margin: 10px auto;
+        }
+    
+        .nav-menu.active {
+            left: 0;
         }
     
         .hero {
