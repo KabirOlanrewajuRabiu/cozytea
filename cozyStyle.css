@@ -20,19 +20,20 @@ header {
     align-items: center;
     border-bottom: 1px solid seashell;
     position: fixed;
+    top: 0;
     opacity: 0.9;
 }
 
-header .nav-menu {
+.nav-menu {
     display: flex;
     gap: 50px;
 }
 
-header .nav-item {
+.nav-item {
     list-style: none;
 }
 
-header .nav-link {
+.nav-link {
     text-decoration: underline;
     font-size: 22px;
 }
@@ -41,7 +42,6 @@ header .nav-link {
     margin: 0 auto;
     margin-bottom: 100px;
     width: 100%;
-    height: 700px;
     background-image: url(Images/img-mission-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@ header .nav-link {
 }
 
 .deal {
-    width: 1000px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -216,25 +216,17 @@ footer h5{
     }
 
     .nav-item {
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .nav-menu.active {
         right: 0;
     }
-
-    .hero {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 500px;
-        background-image: url(Images/img-mission-background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-    }
-
-    .hero #mission {
-        width: 100%;
+    
+    .hero #mission h4 {
+        margin: 15px 0px;
+        font-size: 25px;
+        font-weight: bolder;
     }
     
     .hero #mission h2 {
@@ -249,13 +241,7 @@ footer h5{
         font-weight: bold;
     }
 
-    .teaOfTheMonth {
-        width: 100%;
-        text-align: center;
-    }
-    
     .teaOfTheMonth h2 {
-        margin: 20px 0px;
         font-size: 25px;
         font-weight: bold;
     }
@@ -267,7 +253,6 @@ footer h5{
     }
     
     .deal {
-        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -277,36 +262,16 @@ footer h5{
     
     .teaPic {
         width: 90%;
-        margin: 10px;
     }
     
     .deal h2 {
-        margin: 20px 0px;
         font-size: 15px;
         font-weight: bold;
     }
 
-    .locations {
-        width: 100%;
-        background-image: url(Images/img-locations-background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 auto;
-        margin-top: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .locations .locationCard {
         width: 40%;
         padding: 30px 5px;
-        text-align: center;
-    }
-    
-    .locations .locationCard #last {
-        opacity: 1;
     }
     
     .locations .locationCard h2 {
@@ -317,28 +282,19 @@ footer h5{
         font-size: 10px;
         line-height: 30px;
     }
-
-    footer {
-        text-align: center;
-    }
     
     footer #contact h2{
         font-size: 25px;
-        margin-top: 25px;
-        margin-bottom: 50px;
     }
     
     footer #contact h5{
         font-size: 15px;
         margin: 5px;
-        text-align: center;
     }
     
     footer h5{
         font-size: 10px;
-        text-align: left;
         padding-left: 15px;
-        padding-bottom: 50px;
     }
     
 }
@@ -404,20 +360,6 @@ footer h5{
         .nav-menu.active {
             left: 0;
         }
-    
-        .hero {
-            margin-bottom: 100px;
-            width: 100%;
-            height: 500px;
-            background-image: url(Images/img-mission-background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
-        }
-    
-        .hero #mission {
-            width: 100%;
-        }
         
         .hero #mission h2 {
             padding: 10px;
@@ -467,28 +409,12 @@ footer h5{
             font-size: 15px;
             font-weight: bold;
         }
-    
-        .locations {
-            width: 100%;
-            background-image: url(Images/img-locations-background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0 auto;
-            margin-top: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
         
         .locations .locationCard {
             width: 30%;
             margin: 15px 20px;
             padding: 30px 5px;
             text-align: center;
-        }
-        
-        .locations .locationCard #last {
-            opacity: 1;
         }
         
         .locations .locationCard h2 {
@@ -499,27 +425,20 @@ footer h5{
             font-size: 10px;
             line-height: 30px;
         }
-    
-        footer {
-            text-align: center;
-        }
         
         footer #contact h2{
             font-size: 25px;
             margin-top: 25px;
-            margin-bottom: 50px;
         }
         
         footer #contact h5{
             font-size: 15px;
             margin: 5px;
-            text-align: center;
         }
         
         footer h5{
             text-align: left;
             padding-left: 8px;
-            padding-bottom: 50px;
         }
 
 }
