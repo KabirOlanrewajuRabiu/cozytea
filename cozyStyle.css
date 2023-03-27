@@ -42,6 +42,7 @@ header {
     margin: 0 auto;
     margin-bottom: 100px;
     width: 100%;
+    height: 700px;
     background-image: url(Images/img-mission-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,7 +272,8 @@ footer h5{
 
     .locations .locationCard {
         width: 40%;
-        padding: 30px 5px;
+        padding: 20px;
+        margin: 10px;
     }
     
     .locations .locationCard h2 {
