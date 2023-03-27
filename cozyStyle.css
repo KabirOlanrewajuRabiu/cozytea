@@ -270,10 +270,15 @@ footer h5{
         font-weight: bold;
     }
 
+    .locations {
+        flex-direction: column;
+        padding: 30px;
+    }
+
     .locations .locationCard {
-        width: 40%;
+        width: 50%;
         padding: 20px;
-        margin: 10px;
+        margin: 15px;
     }
     
     .locations .locationCard h2 {
